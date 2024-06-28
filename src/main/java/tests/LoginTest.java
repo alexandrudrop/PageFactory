@@ -8,7 +8,7 @@ import pageObjects.MyAccountPage;
 import selenium.utils.BaseTest;
 
 public class LoginTest extends BaseTest{
-	
+
 	String USER = PropertiesFileProcessor.readPropertiesFile("user", "credentials.properties");
 	String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.properties");
 	
@@ -21,6 +21,8 @@ public class LoginTest extends BaseTest{
 		MyAccountPage myAccPage = new MyAccountPage(driver);
 		myAccPage.loginInApp(USER, PASS);
 		
+		
 	}
-
+	
+	
 }
