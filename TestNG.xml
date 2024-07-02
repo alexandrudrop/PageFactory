@@ -5,6 +5,7 @@
     	<parameter name ="appUrl" value="https://keyfood.ro/" />
     
         <classes>
+            <class name="tests.ContactFormTest" ></class>
             <class name="tests.OrderAsARegisteredCustomer" ></class> 
         </classes>
     </test> 

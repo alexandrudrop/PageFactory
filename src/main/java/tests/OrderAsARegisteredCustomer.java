@@ -13,7 +13,7 @@ public class OrderAsARegisteredCustomer extends BaseTest{
 	@Test
 	public void orderTest() {
 		
-		app.click(app.menu.myAccountLink);
+		app.click(app.menuPage.myAccountLink);
 		app.myAccPage.loginInApp(USER, PASS);
 		
 	}
