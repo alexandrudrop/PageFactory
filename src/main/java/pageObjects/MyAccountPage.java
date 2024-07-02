@@ -5,9 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import framework.utils.PropertiesFileProcessor;
 import selenium.utils.SeleniumWrappers;
 
 public class MyAccountPage extends SeleniumWrappers {
+	
+	String USER = PropertiesFileProcessor.readPropertiesFile("user", "credentials.properties");
+	String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.properties");
 
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
