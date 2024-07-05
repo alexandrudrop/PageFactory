@@ -2,13 +2,16 @@ package tests;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import framework.utils.PropertiesFileProcessor;
 import pageObjects.MenuPage;
 import pageObjects.MyAccountPage;
 import selenium.utils.BaseTest;
+import selenium.utils.TestNgListener;
 
+@Listeners(TestNgListener.class)
 public class LoginTest extends BaseTest{
 
 	String USER = PropertiesFileProcessor.readPropertiesFile("user", "credentials.properties");
